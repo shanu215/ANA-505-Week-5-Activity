@@ -54,7 +54,7 @@ piping<-mysample %>%
   dim()%>%
   print()
 
-#TASK: revise this code chunk using piping
+#Uncomment and run this code to see the difference in Summary Stats difference with and without Piping 
 # library(magrittr)
 # mysample2<-mysample
 # arrange(mysample2, airline)
@@ -64,6 +64,7 @@ piping<-mysample %>%
 # mysample4<-summary(mysample3)
 # print(mysample4)
 
+#Revised code using piping
 library(magrittr)
 arrange(mysample, airline)
 mysample2<-mysample %>%
