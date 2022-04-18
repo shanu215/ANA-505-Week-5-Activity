@@ -54,7 +54,7 @@ piping<-mysample %>%
   dim()%>%
   print()
 
-#Uncomment and run this code to see the difference in Summary Stats difference with and without Piping 
+#TASK:Revise this code chunk using piping
 # library(magrittr)
 # mysample2<-mysample
 # arrange(mysample2, airline)
@@ -71,6 +71,6 @@ mysample2<-mysample %>%
   arrange(airline) %>%
   filter(incidents_85_99<25) %>%
   rename(seats = avail_seat_km_per_week) %>%
-  select(incidents_85_99, incidents_00_14) %>%
+  select(incidents_00_14, incidents_85_99) %>%
   summary() %>%
   print()
